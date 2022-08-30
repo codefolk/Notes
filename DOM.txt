@@ -1,0 +1,25 @@
+DOM
+
+For Selecting Tags
+document.querySelector()
+document.querySelectorAll()
+document.getElementById()
+document.getElementsByClassName()
+document.getElementsByTag()
+.getAttribute()
+
+
+For Changes
+.innerHtml
+.textContent
+.classList.add
+.classList.remove
+.classList.toggle
+.style
+.setAttribute(attribute, value)
+.addEventListner(“value”, function)
+.onClick
+.value
+.length
+
+

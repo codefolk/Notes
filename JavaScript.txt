@@ -1,0 +1,243 @@
+JavaScript
+
+Types in JS
+Number
+String
+Boolean
+Undefined 
+Null
+Symbol (New in ECMAScript 6)
+Object
+
+Javascript Comparisons
+!==
+===
+>=
+<=
+<
+>
+
+JavaScript Variables
+var
+let
+const
+
+Javascript Conditionals
+if
+else
+else if
+ternary operator
+switch
+
+Javascript Logical Operators
+&&       And
+||          Or
+!           Not
+
+
+Array Methods
+pop 
+It will remove the last element from array
+
+push
+It will add a new element to array at the end 
+
+shift
+It will remove first element from array 
+
+unshift
+It will add a new element to array at the start
+
+length
+It will add a new element at the end of array
+
+delete 
+It will delete the element from the array but it will leave undefined holes in the array
+
+concat
+It will merge two arrays into one new array.
+It create a new array we must assign it to a new variable to store and access it
+
+splice
+It will add new elements to array it also takes two number arguments along with the new elements the first number argument represents the position of new element in the array while second number argument represents the number of elements to be removed from the array. It can also be used to remove elements from the array but it will leave undefined holes in the array.
+
+slice 
+It will remove elements from the array it takes a number argument 0 means no element will be removed 1 will remove 1st element 2 will remove 1st and 2nd elements.
+It will create a new array and doesn’t remove any elements from the source array hence must be given a new variable name.
+It can take two number arguments like slice(1,3) it will remove first element leave the 2nd element exclude the end element number which is 3 and then remove all the elements after end argument.
+
+
+Function Declaration
+
+function newFunction(){
+}
+
+Function Expression
+
+var newFunction = function (){
+};
+
+Expression
+1+3;
+var a =2;
+return true;
+
+call a function 
+alert()
+newFunction(x, y)
+
+assign a variable
+var a = true;
+
+function vs methods
+
+function thisIsaFunction(){
+}
+
+var obj = {
+        thisIsaMethod : function(){
+       }
+}
+
+How to access function and method
+
+thisIsaFunction() 
+obj.thisIsaMethod
+
+String Method
+.length
+.charAt()
+.indexOf()
+lastIndexOf()
+.trim
+.toUpperCase
+.toLowerCase
+.replaceAll()
+.slice()
+.toLocaleString(“locale”, options)
+JSON.stringify(
+JSON.parse()
+window.print()
+
+
+
+JS dump
+
+Use === signs when you are comparing two items.
+
+3===3 True
+3!==3 False
+
+Strings are enclosed in double quotes or single quotes
+
+Nan stands for not a number
+There seven types in JS
+
+Variable name can’t start with a number 
+Rules for variable name
+Should start with a letter
+Can end with a number 
+Can’t start with a symbol
+Can start with a $ or _
+Preferably use camel case while giving variable name
+
+Use prompt() to take input from the user.
+Number() to change string to a number type.
+
+First data structure 
+Array
+var list = [“tiger”, “cat”,”bear”,”lion”];
+Above is an example of Array
+To access something from array
+list[1];
+It will fetch cat because in arrays first element start from 0;
+We can have arrays in arrays.
+
+.shift() it will move one element in the array to the left
+.pop() it will remove the last element from the array
+.push(“element”) it will add new element at the end of the array
+.concat([“element1”,”element2”] it will add a the elements of the new array in the existing array.
+.sort() it will sort the array.
+
+Index means the number of an element in an array 
+Some methods like push pop will not create a new array but methods like .concat will create a new array and in order to use concatenated array we must first assign it to a new variable
+
+.delete() will delete the element from the array but it’ll leave undefined holes in the array so instead use pop() or shift()
+
+
+ Array Methods
+pop 
+It will remove the last element from array
+push
+It will add a new element to array at the end 
+shift
+It will remove first element from array 
+unshift
+It will add a new element to array at the start
+length
+It will add a new element at the end of array
+delete 
+It will delete the element from the array but it will leave undefined holes in the array
+concat
+It will merge two arrays into one new array.
+It create a new array we must assign it to a new variable to store and access it
+splice
+It will add new elements to array it also takes two number arguments along with the new elements the first number argument represents the position of new element in the array while second number argument represents the number of elements to be removed from the array. It can also be used to remove elements from the array but it will leave undefined holes in the array.
+slice 
+It will remove elements from the array it takes a number argument 0 means no element will be removed 1 will remove 1st element 2 will remove 1st and 2nd elements.
+It will create a new array and doesn’t remove any elements from the source array hence must be given a new variable name.
+It can take two number arguments like slice(1,3) it will remove first element leave the 2nd element exclude the end element number which is 3 and then remove all the elements after end argument.
+
+
+Function Declaration
+
+function newFunction(){
+}
+
+Function Expression
+
+var newFunction = function (){
+};
+
+Expression
+1+3;
+var a =2;
+return true;
+
+call a function 
+alert()
+newFunction(x, y)
+
+assign a variable
+var a = true;
+
+function vs methods
+
+function thisIsaFunction(){
+}
+
+var obj = {
+        thisIsaMethod : function(){
+       }
+}
+
+How to access
+
+thisIsaFunction() 
+obj.thisIsaMethod
+
+
+There is a project on github known as idiomatic which will show you conventional way of writing Javascript so that every developer can understand you code and can easily edit it
+
+typeof gives you the data type of variable
+
+Const value can’t be changed afterwards it’s declared.
+
+Var is only limited to curly braces of a function but it can escape block-scope.
+
+Let is only limited to block-scope.
+
+Declare global variables with let keyword.
+
+Using var to declare global variable can change browser’s window properties.
+

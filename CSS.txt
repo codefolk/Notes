@@ -1,0 +1,228 @@
+CSS Notes
+Stands for cascading style sheets
+Style + Layout
+
+User-agent stylesheet
+User stylesheet
+Author stylesheetxhcxu 
+ 
+Property: value;
+
+/* This is a comment */
+
+<link rel=“stylesheet ” href=“style.css”>
+
+Leave one blank line between each selector in a css file
+
+1 rem= 16px in most browsers
+Rem= root em equal to the font of html
+ 
+You can select multiple tags by separating them with commas in css
+
+* is the universal selector in css it applies the declaration to everything.
+
+. Is used before a class name in css
+# is used before the Id of an element in css
+
+It is recommended to use percentages for widths.
+
+Use calc() to add or subtract from a css value
+
+It is recommended to use ch unit for widths of paragraph between 50ch and 70ch.
+
+a[href=“https://google.com”]{
+Color:red;
+}
+
+The above is the attribute selector 
+
+Descendant selector 
+
+Footer p{}
+
+It will select all the p tag right after the footer tag.
+
+Child selector 
+
+footer > p{}.
+
+It will select the only p tag which is the first child of footer tag.
+
+Sibling selectors
+Siblings are those who share the same parent.
+Adjacent siblings 
+h2 + p{}
+Non-adjacent siblings 
+h2 ~ p{}
+
+Pseudo elements and pseudo classes
+a: link tag
+        This pseudo tag will select the only un-visited links once the user visits the link it will no longer apply declarations on that link.
+
+a:visited tag
+It will only select the visited anchor tags.
+
+: focus tag
+: invalid tag
+:not(any other pseudo tag ) tag
+:first-of-type
+:last-of-type
+:nth-of-type(any number)
+:first-child
+
+Pseudo classes uses single Collin while pseudo elements use double Collin.
+
+::first-letter
+::first-line
+::before
+::after
+
+
+Specificity 
+inline styles=1000pts
+Ids=100pts
+Classes=10pts
+Pseudo classes=10pts
+Attributes=10pts
+Elements=1pt
+Pseudo elements=1pt
+
+Use !important to avoid any specificity conflict.
+
+Units
+Lengths
+px: pixels, absolute length
+em: relative to font size 
+rem: relative to root element font size
+vw: 1% of viewport width
+vh: 1% of viewport height
+ch: width of 0 character
+%: usually relate to parent value
+
+Width/Heights
+%: to be relative to parent
+vw/vh: to be relative to viewport
+ch: for paragraph widths
+rem: for closer to absolute values
+Px: for absolute values
+
+Margin/Padding 
+rem: closer to absolute value but relative 
+em: to scale with font size
+px: for small values
+
+Borders/Shadows
+px: for small values
+rem/em: just ok to use not recommended 
+
+Font Size
+rem: best
+em: to scale accordingly to parent size
+px: as a final option 
+
+Colors
+keyword: red, blue, yellow etc
+Hex RGB: ￼
+RGB: rgb(75, 125, 175)
+RGBA: rgba(75, 125, 175, 0.5)
+HSL:hsl(210, 40%, 49%)
+HSLA: hsla(210, 40%, 49%,.5)
+
+
+Box Model
+Margin
+Border
+Padding
+Content
+
+margin: top right bottom left;
+margin: vertical bottom;
+margin: all_sides;
+margin: auto; (mostly auto=0)
+ 
+-> Negative margin value pulls the content      while positive margin value push content away and negative value doesn’t work for padding
+
+-> Avoid using negative margin and padding values.
+
+-> Vertical margin and padding doesn’t work in inline elements.
+
+-> Border can be set to only one side like border-top, border-bottom.
+
+-> Box-Sizing avoid the overflow of content.
+
+Position
+By default the position is static.
+Possible values
+fixed
+relative 
+sticky
+absolute 
+
+Z-index is to give a certain element some height.
+The property of float allows to wrap around the element.
+
+Context Stacking
+Usually uses z-index to stack elements along the z-axis with position fixed plus there are other ways of stacking context rather than this method.
+FlexBox
+Justify-content is used for aligning along x-axis.
+Align-items for aligning along y-axis.
+Order indicates that where the element will belong default:0 at 1 at the start at -1 at the end
+Flex-grow indicates that if there is space then element can or cannot take that extra space. default:0
+
+Grid
+display: grid;
+grid-template-column
+grid-template-row
+grid-template-area
+
+Use the following in the parent element where display property is applied 
+Justify-content
+Align-items
+Place-items (justify+align)
+
+Use the following in children elements of the parent element in which display property is used
+Justify-self
+Align-self
+Place-self p(justify+align)
+
+Images
+Wether the image is content or style?
+It depends wether the image is in html or stylesheet 
+If image is in html it is part of content while if it is in css it would be for styling
+Try to put images in css and
+role=“img” aria-label=“img_purpose”
+
+background-image:url(“”);
+background-size: contain;
+background-repeat:no-repeat;
+background-origin: padding-box;
+background-clip:padding-box;
+ 
+CSS inheritance
+In CSS every property is categorised into two types one is:
+Inherited Property 
+Non-Inherited Property 
+
+Properties:
+Inherit;
+Initial;
+Unset;
+revert;
+all:unset;
+
+Responsive Design 
+add meta tag in html 
+<meta name=“viewport”             content=“width=device-width, initial-scale=1”/>
+Add media queries.
+Use max-width on texts
+Let things breathe use gap to separate elements use padding on images
+Give line height to whole body.
+Line height for headings should be low
+Focus on color contrast to make things more readable.
+Don’t use text-align justify
+Don’t use text-align centre on large blocks of text rather use it on small pieces of texts.
+Don’t afraid to use large font-size on headings on larger screens but use small fonts on small screens 
+
+
+
+

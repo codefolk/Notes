@@ -1,0 +1,13 @@
+VS code Shortcuts 
+
+Ctrl + D to select next selection 
+Ctrl + Shift + L to select all the same words in html document 
+Double click will select a word 
+Triple click will select a line 
+4 clicks will select whole text
+Ctrl + L will select the whole line
+Ctrl + Enter will bring cursor to next line
+Ctrl + Shift + Enter to add a line space
+Alt + Shift + Down arrow to make duplicate of selection 
+Ctrl + up/down to Navigate
+
